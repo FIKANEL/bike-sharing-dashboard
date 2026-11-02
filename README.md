@@ -7,7 +7,7 @@ Proyek akhir analisis data untuk kelas **"Belajar Analisis Data dengan Python"**
 ## 👤 Informasi Mahasiswa
 - **Nama:** M Fikkan El Haq
 - **Email:** mfikkanel@gmail.com
-- **ID Dicoding:** DS284B6Y0938
+- **ID Dicoding:** fikkanel
 - **Tautan Dashboard Streamlit:** [bike-sharing-analytics-fikkan.streamlit.app](https://bike-sharing-analytics-fikkan.streamlit.app/)
 
 ---
@@ -37,11 +37,11 @@ submission/
 ## 🎯 Pertanyaan Bisnis (SMART Framework)
 
 1. **Pertanyaan 1 (Tren Waktu, Musim & Cuaca):**  
-   *Bagaimana tren total penyewaan sepeda bulanan sepanjang tahun 2011 hingga 2012, dan pada musim (season) serta kondisi cuaca (weather situation) apa volume penyewaan mencapai angka tertinggi?*
-2. **Pertanyaan 2 (Perilaku Komuter Casual vs Registered):**  
-   *Bagaimana perbedaan pola aktivitas penyewaan sepeda antara pengguna kasual (casual) dan pengguna terdaftar (registered) pada hari kerja (workingday) versus hari libur/akhir pekan (weekend/holiday), serta pada rentang jam berapa (hourly peak) lonjakan permintaan terjadi?*
-3. **Pertanyaan 3 (Analisis Lanjutan - Manual Grouping & Binning):**  
-   *Bagaimana variasi jumlah penyewaan sepeda ketika dikelompokkan ke dalam klaster segmen waktu harian (Part of Day: Dini Hari, Pagi Sibuk, Jam Kerja/Siang, Sore Sibuk, Malam) dan kategori suhu lingkungan (Dingin, Sejuk, Hangat/Ideal, Panas)?*
+   *Bagaimana tren total penyewaan sepeda bulanan pada periode Januari 2011 hingga Desember 2012, serta pada musim (season) dan kondisi cuaca (weather situation) apa volume penyewaan mencapai angka tertinggi, sebagai dasar penjadwalan perawatan armada dan kesiapan kapasitas?*
+2. **Pertanyaan 2 (Pola Pengguna Casual vs Registered):**  
+   *Bagaimana perbedaan pola rata-rata penyewaan sepeda antara pengguna kasual (casual) dan pengguna terdaftar (registered) pada hari kerja (workingday) versus hari libur/akhir pekan (weekend/holiday) sepanjang 2011–2012, serta pada rentang jam berapa (hourly peak) lonjakan permintaan terjadi, sebagai dasar perencanaan redistribusi armada antar-stasiun dan promo konversi pengguna kasual?*
+3. **Pertanyaan 3 (Analisis Lanjutan - Segmentasi Waktu & Suhu):**  
+   *Bagaimana variasi jumlah penyewaan sepeda ketika dikelompokkan ke dalam klaster segmen waktu harian (Part of Day: Dini Hari, Pagi Sibuk, Jam Kerja/Siang, Sore Sibuk, Malam) dan kategori suhu lingkungan (Dingin, Sejuk, Hangat/Ideal, Panas) sepanjang 2011–2012, sebagai dasar penjadwalan logistik dan perawatan di jam sepi?*
 
 ---
 
@@ -51,8 +51,9 @@ submission/
    Total peminjaman sepeda melonjak dari **1.243.103 unit** (2011) menjadi **2.049.576 unit** (2012), dengan puncak bulanan tertinggi tercapai pada September 2012 (218.573 unit).
 2. **Pengaruh Musim & Cuaca:**  
    Musim Gugur (*Fall*) mencatatkan rata-rata sewa harian tertinggi (**5.644 unit/hari**), disusul Musim Panas (**4.992 unit/hari**). Cuaca cerah mendominasi (**4.877 unit/hari**), sedangkan cuaca hujan/salju menyebabkan penurunan sewa hingga 63,0% (**1.803 unit/hari**).
-3. **Karakteristik Pengguna (Bimodal vs Unimodal):**  
-   Pengguna terdaftar (*Registered*, 81,2%) memiliki perilaku komuter tajam pada jam sibuk hari kerja (**08:00** pagi dan **17:00–18:00** sore). Pengguna kasual (*Casual*, 18,8%) mendominasi akhir pekan dengan puncak rekreasi di siang hari (**12:00–16:00**).
+3. **Karakteristik Pengguna (Hari Kerja vs Akhir Pekan):**  
+   - Pada hari kerja, pengguna terdaftar mendominasi hingga **86,77%** dengan rata-rata **3.978 unit/hari** dan lonjakan komuter bimodal pada pukul **08:00** dan **17:00–18:00**.
+   - Pada akhir pekan/hari libur, peminjaman kasual melonjak lebih dari dua kali lipat menjadi rata-rata **1.371 unit/hari** (**31,66%**) dengan puncak rekreasi unimodal di siang hari pada rentang **12:00–16:00**.
 4. **Analisis Lanjutan:**  
    Segmen Sore Sibuk (16:00–20:00) menyumbang sepertiga beban operasional sistem (rata-rata 377,6 unit/jam), sementara dini hari (00:00–06:00) sangat tenang (24,9 unit/jam), menjadikannya waktu ideal untuk pemeliharaan unit dan redistribusi armada.
 

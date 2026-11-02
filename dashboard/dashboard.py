@@ -195,7 +195,7 @@ with st.sidebar:
     st.markdown("""
     - Nama: M Fikkan El Haq
     - Email: mfikkanel@gmail.com
-    - ID Dicoding: DS284B6Y0938
+    - ID Dicoding: fikkanel
     """)
 
 # ---------------------------------------------------------
@@ -523,4 +523,4 @@ with tab3:
 # Footer
 # ---------------------------------------------------------
 st.divider()
-st.caption("Capital Bikeshare Analytics | Analis: M Fikkan El Haq (DS284B6Y0938) | Dicoding Indonesia 2026")
+st.caption("Capital Bikeshare Analytics | Analis: M Fikkan El Haq (fikkanel) | Dicoding Indonesia 2026")
